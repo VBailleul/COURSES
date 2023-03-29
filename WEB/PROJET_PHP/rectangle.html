@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire rectangle</title>
+    <style>
+        legend{background-color:lightgrey;
+            border-radius:5px;
+            color:black;
+            border: 1px black solid;
+            padding:10px;
+        };
+        
+        .myDiv{background-color:black
+            }
+        
+    </style>
+</head>
+
+<body>
+    <form action="rectangle.php" method="GET">
+        <fieldset style="background-color:lightgrey">
+            <legend>
+                Création d'un rectangle
+            </legend>
+            <div class="myDiv">
+            <table>
+                <tr>
+                    <td><p>Largeur :</p></td><th><p><input type="number" name="l" min="30" max="400"></p></th>
+                </tr>
+                <tr>
+                    <td><p>Hauteur :</p></td><th><p><input type="number" name="h" min="30" max="100"></p></th>
+                </tr>
+                <tr>
+                    <td><p>Couleur :</p></td><th><select name='col'><option>bleu</option><option>blanc</option><option>vert</option></select></th>
+                </tr>
+                <tr><td></td><td><p><input type="reset" value="Effacer">    <input type="submit" value="Envoyer"> </p></td></tr>
+            </table>
+            </div>
+    </form>
+</body>

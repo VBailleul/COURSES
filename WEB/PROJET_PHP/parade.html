@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulaires et actions</title>
+		<style>
+			legend{background-color:lightgrey;
+				border-radius:5px;
+				color:black;
+				border: 1px black solid;
+				padding:10px;
+			};
+			
+			.myDiv{background-color:black
+				}
+			
+		</style>
+	</head>
+	
+	<body>
+		<form action="parade.php" method="GET">
+			<fieldset style="background-color:lightgrey">
+				<legend>
+					Inscription à la grande parade
+				</legend>
+				<div class="myDiv">
+				<table>
+					<tr>
+						<td><p>Prénom :</p></td><th><p><input type="text" name="pn"></p></th>
+					</tr>
+					<tr>
+						<td><p>Nom :</p></td><th><p><input type="text" name="n"></p></th>
+					</tr>
+					<tr>
+						<td><p>Mél :</p></td><th><p><input type="text" name="mel" pattern="[a-z]+[.][a-z]+@univ-rouen.fr" value="prenom.nom@univ-rouen.fr"></p></th>
+					</tr>
+					<tr><td></td><td><p><input type="reset" value="Effacer">    <input type="submit" value="Envoyer"</p></td></tr>
+				</table>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
+
